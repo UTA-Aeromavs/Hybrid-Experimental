@@ -20,12 +20,14 @@ times = [0.1 20 40 60];
 
 internal_diameter_vs_length = figure;
 hold on;
+theme('light')
 xlabel('Distance Down Port x [m]');
 ylabel('Port Diameter [m]');
 legend('show');
 
 regression_rate_vs_length = figure;
 hold on;
+theme('light')
 xlabel('Distance Down Port x [m]');
 ylabel('Regression Rate [m/s]');
 legend('show');
@@ -43,12 +45,14 @@ for idx = 1:size(r, 1)
 end
 
 mass_flow_rate_vs_time = figure;
+theme('light')
 hold on;
 xlabel('Time');
 ylabel('mass flow rate');
 plot(times, dmdt);
 
 of_vs_time = figure;
+theme('light')
 hold on;
 xlabel('Time');
 ylabel('Oxidizer to fuel ratio');
